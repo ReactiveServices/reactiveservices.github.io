@@ -33,7 +33,7 @@ Ao ser executado, este comando lança as unidades computacionais e os *jobs* ini
 O processo iniciado com este comando se mantem ativo permanentemente e é ele também o responsável por supervisonar as unidades computacionais lançadas.
 - **ComputationalUnit.exe:**	Comando responsável por iniciar e hospedar os *workers* que compõem uma unidade computacional.
 Ao se executado esse comando inicializa uma nova unidade computacional e a configura conforme o arquivo de configuração recebido como parâmetro.
-- **Arquivos de configuração:** os arquivos *Bootstrap.config*, *Settings.config*, *Dependencies.config* e *NLog.config* estarão presentes em toda aplicação Reactive Services, fornecendo à aplicações os parametros necessários para sua execução.
+- **Arquivos de configuração:** os arquivos *Bootstrap.config*, *Settings.config*, *Dependencies.config* e *NLog.config* estarão presentes em toda aplicação Reactive Services, fornecendo às aplicações os parametros necessários para sua execução.
 - **[Application].dll:**	Biblioteca de sofware contendo uma dada aplicação, onde [Application] representa o nome da aplicação, conforme informado no arquivo *bootstrap.config*.
 - **ReactiveServices.\*.dll e outros arquivos \*.dll:**	Bibliotecas dos Reactive Services, usadas pelos aplicativos listados acima.
 - **mono:**	Comando usado para execução dos aplicativos *bootstrap.exe* e *computationalunit.exe* em ambiente Linux. Em ambiente Windows esse comando também pode ser utilizado, no entanto a execução direta dos aplicativos também é possível, sendo até recomendada.
