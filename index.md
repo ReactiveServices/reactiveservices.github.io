@@ -31,13 +31,13 @@ O [Manifesto Reativo](http://www.reactivemanifesto.org/pt-BR) é um manifesto qu
 ## Principais componentes
 
 Os principais componentes de uma aplicação Reactive Services são:
-- **Bootstrap.exe:**	Comando responsável por iniciar uma aplicação Reactive Services.
-Ao ser executado, este comando lança as unidades computacionais e os *jobs* iniciais configurados no arquivo *bootstrap.config*.
+- **[Application].exe:**	Aplicativo responsável por iniciar uma aplicação Reactive Services. Esse aplicativo deve seguir o modelo do pacote ReactiveServices disponível no nuget.org
+Ao ser executado, esse aplicativo lança as unidades computacionais e os *jobs* iniciais configurados no arquivo *bootstrap.config*.
 O processo iniciado com este comando se mantem ativo permanentemente e é ele também o responsável por supervisonar as unidades computacionais lançadas.
+- **[Application].dll:**	Biblioteca de sofware contendo uma dada aplicação, conforme informado no arquivo *bootstrap.config*.
 - **ComputationalUnit.exe:**	Comando responsável por iniciar e hospedar os *workers* que compõem uma unidade computacional.
 Ao se executado esse comando inicializa uma nova unidade computacional e a configura conforme o arquivo de configuração recebido como parâmetro.
 - **Arquivos de configuração:** os arquivos *Bootstrap.config*, *Settings.config*, *Dependencies.config* e *NLog.config* estarão presentes em toda aplicação Reactive Services, fornecendo às aplicações os parâmetros necessários para sua execução.
-- **[Application].dll:**	Biblioteca de sofware contendo uma dada aplicação, onde [Application] representa o nome da aplicação, conforme informado no arquivo *bootstrap.config*.
 - **ReactiveServices.\*.dll e outros arquivos \*.dll:**	Bibliotecas dos Reactive Services, usadas pelos aplicativos listados acima.
 - **mono:**	Comando usado para execução dos aplicativos *bootstrap.exe* e *computationalunit.exe* em ambiente Linux. Em ambiente Windows esse comando também pode ser utilizado, no entanto a execução direta dos aplicativos também é possível, sendo até recomendada.
 
@@ -71,4 +71,4 @@ _ _ _
 ###### Rafael Romão
 Arquiteto de Software
 Concert Technologies SA
-04 de Julho de 2015, 09:07
+30 de Julho de 2015, 13:44
