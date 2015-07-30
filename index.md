@@ -8,7 +8,6 @@ Reactive Services é um framework para desenvolvimento de aplicações distribu�
 
 Aplicações escritas sobre o framework [Reactive Services](http://reactiveservices.github.io/) apresentam as seguintes características:
 
-
 - **Modularização**
 Aplicações desenvolvidas sobre o framework Reactive Services já nascem modularizadas e prontas para serem distribuídas independentemente. Isso se deve ao enfoque na comunicação assincrona e através de barramento de mensagens, tanto entre as aplicações quanto entre os componentes das aplicações, o que serve como guia para o trabalho do desenvolvedor.
 Por padrão, a comunicação entre aplicações Reactive Services ocorre através da postagem de mensagens em um ou mais barramentos de mensagem, seguindo os padrões [Publish/Subscribe](http://www.enterpriseintegrationpatterns.com/PublishSubscribeChannel.html), [Request/Response](http://www.enterpriseintegrationpatterns.com/RequestReply.html) ou [Send/Receive,](http://www.enterpriseintegrationpatterns.com/CommandMessage.html) os quais permitem a implementação de praticamente todos os tipos de comunicação necessária entre duas aplicações. O uso desses padrões permite que as aplicações se mantenham mais independentes e desconectadas umas das outras, podendo assim serem modificadas e substituídas mais facilmente quando necessário.
