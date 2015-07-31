@@ -32,6 +32,10 @@ The [Reactive Manifesto](http://www.reactivemanifesto.org) describes a criteria 
 
 To know more about the framework visit its repository on github at http://github.com/reactiveservices.
 
+## Sponsorship
+
+Sponsored by [Concert Technologies SA](http://www.concert.com.br/en/)
+
 ## License
 
 MIT License
